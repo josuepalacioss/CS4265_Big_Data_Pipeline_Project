@@ -20,7 +20,7 @@ include REST APIs provided by CourtListener and bulk archives provided by the Ca
 Access Project by Harvard Law School. As a result, answering basic questions will require
 great effort.
 
-This project aims to address the following questions:
+_This project aims to address the following questions:_
 
 • How does the volume of court cases and documents change over time across jurisdic-
 tions?
@@ -31,7 +31,7 @@ tions?
 
 • How complete are metadata fields across sources?
 
-At scale, these questions introduce several challenges:
+_At scale, these questions introduce several challenges:_
 
 • Data volume by the hundreds of thousands to over a million records and the resulting
 space.
@@ -45,16 +45,19 @@ Scope
 This project focuses on the design and implementation of a distributed, batch-oriented Big
 Data pipeline for analyzing structured metadata derived from public court documents.
 
-In Scope
+_In Scope_
 
 Batch ingestion of heterogeneous public court datasets:
+
 • Federal court metadata from the CourtListener REST API.
 
 • State court metadata from the Harvard Caselaw Access Project (Georgia) bulk archives.
 
 Schema normalization and validation to unify heterogeneous JSON sources into a shared
 Parquet-based data model.
+
 Metadata analytics
+
 • Case and document volume trends over time.
 
 • Court and jurisdiction activity summaries.
@@ -65,7 +68,7 @@ Distributed query execution using Spark SQL with partitioned Parquet datasets.
 Local execution with a cloud-ready design that supports scaling via additional partitions
 and executors.
 
-Out of Scope
+_Out of Scope_
 
 • Parsing, indexing, or analyzing the contents of court case PDF documents.
 

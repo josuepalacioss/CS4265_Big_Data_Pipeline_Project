@@ -46,6 +46,7 @@ This project focuses on the design and implementation of a distributed, batch-or
 Data pipeline for analyzing structured metadata derived from public court documents.
 
 In Scope
+
 Batch ingestion of heterogeneous public court datasets:
 • Federal court metadata from the CourtListener REST API.
 
@@ -65,6 +66,7 @@ Local execution with a cloud-ready design that supports scaling via additional p
 and executors.
 
 Out of Scope
+
 • Parsing, indexing, or analyzing the contents of court case PDF documents.
 
 • Natural language processing, machine learning, or data mining.
